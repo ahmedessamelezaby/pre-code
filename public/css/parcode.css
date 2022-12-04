@@ -1,0 +1,110 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: rgb(228, 228, 228);   
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+
+@media(min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container{
+        width: 970px;
+        }
+}
+
+@media(min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+.title{
+    text-align: center; 
+    margin: 50px; 
+    line-height: -10px;
+   
+}
+
+.title .welcome{
+    color: rgb(110, 24, 24);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    padding-top: -10px;
+}
+.title h1 span {
+    display: inline-block;
+    color: rgb(110, 24, 24);
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.title h2{
+    color: rgb(126, 123, 123);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+ .content .card{
+    background-color: rgb(250, 250, 250);
+    width: 250px;
+    box-shadow: 0 5px 25px  rgba(59, 57, 57, 0.15) ;
+    height: 250px;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.content .card:hover{
+    transform: scale(1.1);
+}
+
+.card .icon{
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(68, 14, 14);
+}
+
+.card .info {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(197, 194, 194);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
